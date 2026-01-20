@@ -1,0 +1,8 @@
+Confirmación por mensaje a celular via whatsapp
+https://api.whatsapp.com/send?phone=+59170792185&text=%C2%A1Bendiciones!,%20que%20honra%20participar%20de%20su%20matrimonio,%20%C2%A1quiero%20confirmar%20participaci%C3%B3n!.
+
+Ubicación de la dirección del salón de eventos "La Mansion"
+https://maps.app.goo.gl/4XkBiCi6XyoJjee39
+
+Vinculo para formulario de confirmación de participación:
+https://docs.google.com/forms/d/e/1FAIpQLSfjscsj7gGWn8y2ef3KuHRqvO8mnQ5Df5yeWx6qnc09YImeyQ/viewform?usp=header

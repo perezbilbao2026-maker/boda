@@ -1,0 +1,1499 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Invitación al matrimonio de Andrea y Mauro - 14 de Marzo de 2026">
+    <title>Andrea & Mauro | Nuestra Boda</title>
+    
+    <!-- Preconexión para fuentes y recursos externos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Cormorant+Garamond:wght@300;400;500;600&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+    
+    <!-- Estilos principales -->
+    <style>
+        /* ========== VARIABLES Y RESET ========== */
+        :root {
+            /* Paleta de colores refinada */
+            --color-cream: #F9F7F4;
+            --color-ivory: #FFFEFB;
+            --color-light-gray: #F0EDE9;
+            --color-accent: #C8A878; /* Dorado más sofisticado */
+            --color-accent-dark: #B89446;
+            --color-accent-secondary: #E8D4C8; /* Rosa palo más cálido */
+            --color-text-dark: #2C2C2C;
+            --color-text-medium: #555555;
+            --color-text-light: #777777;
+            --color-whatsapp: #25D366;
+            --color-whatsapp-dark: #128C7E;
+            --color-overlay: rgba(0, 0, 0, 0.7);
+            
+            /* Fuentes elegantes */
+            --font-elegant-title: 'Playfair Display', serif;
+            --font-serif: 'Cormorant Garamond', serif;
+            --font-sans: 'Raleway', sans-serif;
+            
+            /* Sombras y efectos */
+            --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.05);
+            --shadow-medium: 0 10px 35px rgba(0, 0, 0, 0.08);
+            --shadow-hard: 0 20px 50px rgba(0, 0, 0, 0.12);
+            --shadow-accent: 0 12px 30px rgba(200, 168, 120, 0.2);
+            
+            /* Transiciones */
+            --transition-smooth: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            --transition-fast: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            color: var(--color-text-dark);
+            background-color: var(--color-cream);
+            line-height: 1.7;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* ========== TIPOGRAFÍA ========== */
+        h1, h2, h3, h4 {
+            font-weight: 600;
+            line-height: 1.2;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* ========== NAVEGACIÓN FIJA ========== */
+        .main-nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 254, 251, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            padding: 1rem 0;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
+            transition: var(--transition-fast);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo {
+            font-family: var(--font-elegant-title);
+            font-size: 1.8rem;
+            color: var(--color-accent);
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            font-family: var(--font-serif);
+            font-size: 1.1rem;
+            color: var(--color-text-medium);
+            transition: var(--transition-fast);
+            padding: 0.5rem 0;
+            position: relative;
+        }
+
+        .nav-links a:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background-color: var(--color-accent);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover:after,
+        .nav-links a.active:after {
+            width: 100%;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--color-accent);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--color-accent);
+            cursor: pointer;
+        }
+
+        /* ========== SECCIONES ========== */
+        .section {
+            min-height: 100vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            padding: 6rem 2rem 4rem;
+        }
+
+        .content-wrapper {
+            max-width: 1200px;
+            width: 100%;
+            z-index: 2;
+            position: relative;
+        }
+
+        /* ========== PORTADA ========== */
+        #portada {
+            background: linear-gradient(135deg, rgba(249,247,244,0.95) 0%, rgba(255,254,251,0.98) 100%);
+            text-align: center;
+            padding-top: 8rem;
+        }
+
+        .portada-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('assets/images/fondo-portada.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            opacity: 0.12;
+            z-index: 1;
+        }
+
+        /* Contenedor de foto con marco elegante */
+        .couple-photo-container {
+            width: 300px;
+            height: 300px;
+            margin: 0 auto 4rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .couple-photo-frame {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 12px solid var(--color-ivory);
+            box-shadow: var(--shadow-hard);
+            position: relative;
+        }
+
+        .couple-photo-frame:before {
+            content: '';
+            position: absolute;
+            top: -4px;
+            left: -4px;
+            right: -4px;
+            bottom: -4px;
+            border-radius: 50%;
+            border: 2px solid var(--color-accent);
+            z-index: 3;
+            opacity: 0.3;
+        }
+
+        .couple-photo {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 1s ease;
+        }
+
+        .couple-photo-container:hover .couple-photo {
+            transform: scale(1.05);
+        }
+
+        .names {
+            font-family: var(--font-elegant-title);
+            font-size: 4.5rem;
+            font-weight: 600;
+            color: var(--color-text-dark);
+            margin-bottom: 1rem;
+            letter-spacing: 0.5px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .names:after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 150px;
+            height: 1px;
+            background-color: var(--color-accent);
+            opacity: 0.5;
+        }
+
+        .invitation-text {
+            font-family: var(--font-serif);
+            font-size: 1.8rem;
+            color: var(--color-text-medium);
+            margin: 3rem auto 4rem;
+            font-weight: 300;
+            letter-spacing: 3px;
+            max-width: 800px;
+            line-height: 1.6;
+        }
+
+        /* ========== CONTADOR REGRESIVO ========== */
+        .countdown-section {
+            margin: 3rem auto;
+            max-width: 900px;
+        }
+
+        .countdown-title {
+            font-family: var(--font-serif);
+            font-size: 2rem;
+            color: var(--color-text-medium);
+            margin-bottom: 3rem;
+            text-align: center;
+            font-weight: 400;
+            letter-spacing: 1px;
+        }
+
+        .countdown-container {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .countdown-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-width: 140px;
+        }
+
+        .countdown-number {
+            font-family: var(--font-elegant-title);
+            font-size: 4.5rem;
+            font-weight: 600;
+            color: var(--color-accent);
+            line-height: 1;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        .countdown-label {
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 2.5px;
+            color: var(--color-text-light);
+            font-weight: 400;
+        }
+
+        /* ========== DETALLES ========== */
+        #detalles {
+            background-color: var(--color-ivory);
+            position: relative;
+        }
+
+        .details-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, rgba(200,168,120,0.03) 0%, rgba(232,212,200,0.03) 100%);
+            z-index: 1;
+        }
+
+        .section-title {
+            font-family: var(--font-elegant-title);
+            font-size: 4rem;
+            color: var(--color-text-dark);
+            margin-bottom: 5rem;
+            text-align: center;
+            font-weight: 600;
+            position: relative;
+            z-index: 2;
+        }
+
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: -25px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 150px;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--color-accent), transparent);
+        }
+
+        .details-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 3.5rem;
+            margin-top: 3rem;
+        }
+
+        .detail-card {
+            background: var(--color-cream);
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: var(--shadow-medium);
+            border: 1px solid rgba(200, 168, 120, 0.15);
+            transition: var(--transition-smooth);
+            position: relative;
+            overflow: hidden;
+            z-index: 2;
+        }
+
+        .detail-card:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--color-accent), var(--color-accent-secondary));
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .detail-card:hover:before {
+            opacity: 1;
+        }
+
+        .detail-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-hard);
+        }
+
+        .detail-icon {
+            font-size: 2.5rem;
+            color: var(--color-accent);
+            margin-bottom: 2rem;
+            display: inline-block;
+            transition: transform 0.3s ease;
+        }
+
+        .detail-card:hover .detail-icon {
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        .detail-title {
+            font-family: var(--font-serif);
+            font-size: 2.2rem;
+            color: var(--color-text-dark);
+            margin-bottom: 1.5rem;
+            font-weight: 500;
+            line-height: 1.3;
+        }
+
+        .detail-text {
+            color: var(--color-text-medium);
+            margin-bottom: 2rem;
+            font-size: 1.2rem;
+            line-height: 1.8;
+        }
+
+        .detail-highlight {
+            color: var(--color-accent-dark);
+            font-weight: 500;
+        }
+
+        /* ========== BOTONES ========== */
+        .elegant-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            padding: 1.3rem 3rem;
+            background-color: transparent;
+            color: var(--color-accent);
+            border-radius: 50px;
+            text-decoration: none;
+            font-family: var(--font-sans);
+            font-size: 1.2rem;
+            font-weight: 500;
+            transition: var(--transition-smooth);
+            border: 2px solid var(--color-accent);
+            cursor: pointer;
+            margin-top: 1rem;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .elegant-button:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.7s ease;
+            z-index: -1;
+        }
+
+        .elegant-button:hover:before {
+            left: 100%;
+        }
+
+        .elegant-button:hover {
+            background-color: var(--color-accent);
+            color: white;
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-accent);
+        }
+
+        .elegant-button:active {
+            transform: translateY(-2px);
+        }
+
+        .elegant-button:focus {
+            outline: 2px solid var(--color-accent);
+            outline-offset: 4px;
+        }
+
+        .elegant-button.whatsapp {
+            border-color: var(--color-whatsapp);
+            color: var(--color-whatsapp);
+        }
+
+        .elegant-button.whatsapp:hover {
+            background-color: var(--color-whatsapp);
+            color: white;
+        }
+
+        .elegant-button.confirmed {
+            background-color: var(--color-accent);
+            color: white;
+            border-color: var(--color-accent);
+            cursor: default;
+        }
+
+        .elegant-button.confirmed:hover {
+            transform: none;
+            box-shadow: none;
+        }
+
+        /* ========== CONFIRMACIÓN ========== */
+        #confirmacion {
+            background-color: var(--color-cream);
+            position: relative;
+        }
+
+        .confirmation-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('assets/images/fondo-confirmacion.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            opacity: 0.05;
+            z-index: 1;
+        }
+
+        .confirmation-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .confirmation-text {
+            font-size: 1.4rem;
+            color: var(--color-text-medium);
+            margin-bottom: 4rem;
+            line-height: 1.9;
+        }
+
+        .confirmation-highlight {
+            color: var(--color-accent-dark);
+            font-weight: 600;
+        }
+
+        .button-group {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2.5rem;
+            margin-top: 3.5rem;
+        }
+
+        /* ========== AGRADECIMIENTO ========== */
+        #agradecimiento {
+            background-color: var(--color-ivory);
+            text-align: center;
+            position: relative;
+        }
+
+        .thankyou-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('assets/images/fondo-agradecimiento.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            opacity: 0.06;
+            z-index: 1;
+        }
+
+        .thankyou-message {
+            font-family: var(--font-serif);
+            font-size: 2.2rem;
+            color: var(--color-text-dark);
+            margin-bottom: 3rem;
+            font-weight: 300;
+            line-height: 1.7;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            z-index: 2;
+        }
+
+        .signature {
+            font-family: var(--font-elegant-title);
+            font-size: 4rem;
+            color: var(--color-accent);
+            margin-top: 4rem;
+            letter-spacing: 1.5px;
+            position: relative;
+            display: inline-block;
+            z-index: 2;
+        }
+
+        .signature:after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: rgba(200, 168, 120, 0.3);
+        }
+
+        /* ========== ELEMENTOS DECORATIVOS ========== */
+        .divider {
+            width: 120px;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--color-accent), transparent);
+            margin: 4rem auto;
+            opacity: 0.7;
+        }
+
+        .scroll-indicator {
+            position: absolute;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: var(--color-text-light);
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            z-index: 2;
+        }
+
+        .scroll-indicator i {
+            margin-top: 0.5rem;
+            font-size: 1.5rem;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+            40% {transform: translateY(-10px);}
+            60% {transform: translateY(-5px);}
+        }
+
+        /* ========== QR STYLING ========== */
+        .qr-container {
+            text-align: center;
+            margin-top: 2rem;
+            padding: 1.5rem;
+            background: white;
+            border-radius: 15px;
+            box-shadow: var(--shadow-soft);
+            border: 1px solid var(--color-light-gray);
+        }
+
+        .qr-image {
+            width: 180px;
+            height: auto;
+            margin-bottom: 1rem;
+        }
+
+        .qr-caption {
+            font-size: 1rem;
+            color: var(--color-text-light);
+            font-style: italic;
+        }
+
+        /* ========== MODAL ========== */
+        #formModal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: var(--color-overlay);
+            z-index: 10000;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            backdrop-filter: blur(5px);
+        }
+
+        .modal-content {
+            background: white;
+            border-radius: 20px;
+            width: 100%;
+            max-width: 600px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 30px 70px rgba(0, 0, 0, 0.3);
+            animation: modalAppear 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        @keyframes modalAppear {
+            from {
+                opacity: 0;
+                transform: translateY(30px) scale(0.95);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        .modal-header {
+            padding: 2rem 2rem 1rem;
+            text-align: center;
+            border-bottom: 1px solid var(--color-light-gray);
+        }
+
+        .modal-title {
+            font-family: var(--font-serif);
+            font-size: 2.2rem;
+            color: var(--color-text-dark);
+            margin-bottom: 0.5rem;
+        }
+
+        .modal-subtitle {
+            color: var(--color-text-medium);
+            font-size: 1.1rem;
+        }
+
+        .modal-body {
+            padding: 2rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.8rem;
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--color-text-dark);
+            font-weight: 500;
+            font-size: 1.1rem;
+        }
+
+        .form-input, .form-select {
+            width: 100%;
+            padding: 1rem 1.2rem;
+            border: 1px solid var(--color-light-gray);
+            border-radius: 10px;
+            font-family: var(--font-sans);
+            font-size: 1rem;
+            color: var(--color-text-dark);
+            background: var(--color-ivory);
+            transition: var(--transition-fast);
+        }
+
+        .form-input:focus, .form-select:focus {
+            outline: none;
+            border-color: var(--color-accent);
+            box-shadow: 0 0 0 3px rgba(200, 168, 120, 0.1);
+        }
+
+        .modal-footer {
+            padding: 1.5rem 2rem 2rem;
+            text-align: center;
+            border-top: 1px solid var(--color-light-gray);
+        }
+
+        #closeModal {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: var(--color-accent);
+            border: none;
+            font-size: 2rem;
+            color: white;
+            cursor: pointer;
+            z-index: 10;
+            transition: var(--transition-smooth);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #closeModal:hover {
+            background: var(--color-text-dark);
+            transform: rotate(90deg);
+        }
+
+        /* ========== CONTROL MÚSICA ========== */
+        .music-control {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+            background-color: var(--color-accent);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            z-index: 1000;
+            box-shadow: var(--shadow-hard);
+            transition: var(--transition-smooth);
+            font-size: 1.8rem;
+            border: 3px solid white;
+        }
+
+        .music-control:hover {
+            transform: scale(1.15) rotate(12deg);
+            background-color: var(--color-text-dark);
+        }
+
+        .music-control.paused {
+            background-color: var(--color-text-light);
+        }
+
+        /* ========== FOOTER ========== */
+        .main-footer {
+            background: var(--color-text-dark);
+            color: var(--color-light-gray);
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-text {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            opacity: 0.8;
+        }
+
+        .footer-love {
+            color: var(--color-accent);
+            font-weight: 500;
+        }
+
+        /* ========== RESPONSIVE ========== */
+        @media (max-width: 1200px) {
+            .section-title { font-size: 3.5rem; }
+            .names { font-size: 4rem; }
+            .countdown-number { font-size: 4rem; }
+        }
+
+        @media (max-width: 992px) {
+            .section { padding: 5rem 1.5rem 3rem; }
+            .nav-container { padding: 0 1.5rem; }
+            .nav-links { gap: 1.5rem; }
+            .section-title { font-size: 3.2rem; }
+            .names { font-size: 3.5rem; }
+            .invitation-text { font-size: 1.6rem; }
+            .countdown-number { font-size: 3.5rem; }
+            .countdown-box { min-width: 120px; }
+            .thankyou-message { font-size: 2rem; }
+        }
+
+        @media (max-width: 768px) {
+            .main-nav { padding: 0.8rem 0; }
+            
+            .nav-links {
+                position: fixed;
+                top: 70px;
+                left: 0;
+                width: 100%;
+                background: rgba(255, 254, 251, 0.98);
+                backdrop-filter: blur(10px);
+                flex-direction: column;
+                align-items: center;
+                padding: 2rem 0;
+                gap: 1.5rem;
+                transform: translateY(-100%);
+                opacity: 0;
+                visibility: hidden;
+                transition: var(--transition-smooth);
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            }
+            
+            .nav-links.active {
+                transform: translateY(0);
+                opacity: 1;
+                visibility: visible;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .section-title { font-size: 2.8rem; margin-bottom: 4rem; }
+            .names { font-size: 3rem; }
+            .invitation-text { font-size: 1.4rem; letter-spacing: 2px; margin: 2.5rem auto 3rem; }
+            .countdown-container { gap: 2rem; }
+            .countdown-box { min-width: 100px; }
+            .countdown-number { font-size: 3rem; }
+            .couple-photo-container { width: 250px; height: 250px; margin-bottom: 3rem; }
+            .details-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+            .button-group { flex-direction: column; align-items: center; gap: 1.5rem; }
+            .elegant-button { width: 100%; max-width: 320px; }
+            .thankyou-message { font-size: 1.8rem; }
+            .signature { font-size: 3.2rem; }
+            .music-control { bottom: 20px; right: 20px; width: 60px; height: 60px; font-size: 1.6rem; }
+        }
+
+        @media (max-width: 480px) {
+            .section { padding: 4rem 1rem 2rem; }
+            .section-title { font-size: 2.4rem; }
+            .names { font-size: 2.6rem; }
+            .invitation-text { font-size: 1.3rem; letter-spacing: 1.5px; }
+            .countdown-container { gap: 1rem; }
+            .countdown-box { min-width: 80px; }
+            .countdown-number { font-size: 2.5rem; }
+            .countdown-label { font-size: 0.9rem; }
+            .couple-photo-container { width: 220px; height: 220px; border-width: 8px; }
+            .detail-card { padding: 2rem; }
+            .detail-title { font-size: 1.9rem; }
+            .elegant-button { padding: 1.1rem 2rem; font-size: 1.1rem; }
+            .modal-content { border-radius: 15px; }
+            .modal-header { padding: 1.5rem 1.5rem 1rem; }
+            .modal-body { padding: 1.5rem; }
+        }
+
+        /* ========== ANIMACIONES SCROLL ========== */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .delay-1 { transition-delay: 0.2s; }
+        .delay-2 { transition-delay: 0.4s; }
+        .delay-3 { transition-delay: 0.6s; }
+    </style>
+</head>
+<body>
+    <!-- Navegación fija -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="nav-logo">A&M</div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#portada" class="active">Inicio</a></li>
+                <li><a href="#detalles">Detalles</a></li>
+                <li><a href="#confirmacion">Confirmar</a></li>
+                <li><a href="#agradecimiento">Agradecimiento</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Portada con foto -->
+    <section class="section" id="portada">
+        <div class="portada-background"></div>
+        <div class="content-wrapper">
+            <!-- Foto de los novios -->
+            <div class="couple-photo-container fade-in">
+                <div class="couple-photo-frame">
+                    <img src="assets/images/foto-novios.jpg" alt="Andrea y Mauro" class="couple-photo">
+                </div>
+            </div>
+            
+            <h1 class="names fade-in delay-1">Andrea & Mauro</h1>
+            <p class="invitation-text fade-in delay-1">Con gran alegría los invitamos a nuestro matrimonio</p>
+            
+            <!-- Contador Regresivo -->
+            <div class="countdown-section fade-in delay-2">
+                <h3 class="countdown-title">Faltan</h3>
+                <div class="countdown-container">
+                    <div class="countdown-box">
+                        <div class="countdown-number" id="days">00</div>
+                        <div class="countdown-label">Días</div>
+                    </div>
+                    <div class="countdown-box">
+                        <div class="countdown-number" id="hours">00</div>
+                        <div class="countdown-label">Horas</div>
+                    </div>
+                    <div class="countdown-box">
+                        <div class="countdown-number" id="minutes">00</div>
+                        <div class="countdown-label">Minutos</div>
+                    </div>
+                    <div class="countdown-box">
+                        <div class="countdown-number" id="seconds">00</div>
+                        <div class="countdown-label">Segundos</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="divider fade-in delay-2"></div>
+            
+            <div class="scroll-indicator fade-in delay-3">
+                <span>Descubre los detalles</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Detalles del Evento -->
+    <section class="section" id="detalles">
+        <div class="details-background"></div>
+        <div class="content-wrapper">
+            <h2 class="section-title fade-in">Detalles del Evento</h2>
+            
+            <div class="details-grid">
+                <!-- Fecha y Hora -->
+                <div class="detail-card fade-in">
+                    <div class="detail-icon">
+                        <i class="far fa-calendar-alt"></i>
+                    </div>
+                    <h3 class="detail-title">Fecha y Hora</h3>
+                    <p class="detail-text">
+                        <span class="detail-highlight">Sábado, 14 de Marzo de 2026</span><br><br>
+                        <strong>Ceremonia:</strong> 3:00 PM<br>
+                        <strong>Recepción:</strong> 4:00 PM<br>
+                        <strong>Cóctel:</strong> 4:30 PM
+                    </p>
+                </div>
+                
+                <!-- Lugar -->
+                <div class="detail-card fade-in delay-1">
+                    <div class="detail-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3 class="detail-title">Lugar</h3>
+                    <p class="detail-text">
+                        <span class="detail-highlight">Salón de Eventos "La Mansión"</span><br><br>
+                        Calle Miguel de Aguirre esquina<br>
+                        Calle Buenos Aires<br>
+                        Cochabamba, Bolivia
+                    </p>
+                    <a href="https://maps.app.goo.gl/4XkBiCi6XyoJjee39" target="_blank" class="elegant-button">
+                        <i class="fas fa-map-marker-alt"></i> Ver ubicación
+                    </a>
+                </div>
+                
+                <!-- Vestimenta -->
+                <div class="detail-card fade-in delay-2">
+                    <div class="detail-icon">
+                        <i class="fas fa-tshirt"></i>
+                    </div>
+                    <h3 class="detail-title">Vestimenta</h3>
+                    <p class="detail-text">
+                        <span class="detail-highlight">Elegante - Gala</span><br><br>
+                        Inspírate en nuestra paleta para tu vestimenta:<br><br>
+                        <strong>Hombres:</strong> Traje azul o gris<br>
+                        <strong>Mujeres:</strong> Vestido fucsia, rosa, naranja, amarillo, verde, violeta o lavanda
+                    </p>
+                </div>
+                
+                <!-- Regalos -->
+                <div class="detail-card fade-in delay-3">
+                    <div class="detail-icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <h3 class="detail-title">Mesa de Regalos</h3>
+                    <p class="detail-text">
+                        Su presencia es nuestro mejor regalo. Si desean hacernos un detalle, pueden contribuir a nuestro fondo de luna de miel.
+                    </p>
+                    <div class="qr-container">
+                        <img src="assets/qr/codigo-qr.png" alt="Código QR para regalos" class="qr-image">
+                        <p class="qr-caption">Escanea para contribuir</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Confirmación -->
+    <section class="section" id="confirmacion">
+        <div class="confirmation-background"></div>
+        <div class="content-wrapper">
+            <div class="confirmation-content">
+                <h2 class="section-title fade-in">Confirma Tu Asistencia</h2>
+                
+                <p class="confirmation-text fade-in">
+                    Para nosotros es muy importante saber si nos acompañarás en este día tan especial.<br><br>
+                    Por favor, confirma tu asistencia antes del <span class="confirmation-highlight">01 de Febrero de 2026</span>.
+                </p>
+                
+                <div class="button-group">
+                    <button class="elegant-button fade-in delay-1" id="confirmButton">
+                        <i class="far fa-check-circle"></i> Confirmar Asistencia
+                    </button>
+                    
+                    <a href="https://api.whatsapp.com/send?phone=+59170792185&text=%C2%A1Bendiciones!,%20que%20honra%20participar%20de%20su%20matrimonio,%20%C2%A1quiero%20confirmar%20participaci%C3%B3n!." 
+                       target="_blank" class="elegant-button whatsapp fade-in delay-2">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                </div>
+                
+                <div class="divider fade-in delay-2"></div>
+                
+                <p class="fade-in delay-3" style="color: var(--color-text-light); font-size: 1.1rem; margin-top: 2rem;">
+                    ¿Preguntas o requerimientos especiales?<br>
+                    No dudes en contactarnos directamente.
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Agradecimiento -->
+    <section class="section" id="agradecimiento">
+        <div class="thankyou-background"></div>
+        <div class="content-wrapper">
+            <h2 class="section-title fade-in">Gracias</h2>
+            
+            <p class="thankyou-message fade-in">
+                Que la alegría de este día sea el comienzo de una vida llena de amor,<br>
+                momentos inolvidables y bendiciones compartidas.
+            </p>
+            
+            <p class="thankyou-message fade-in delay-1">
+                Este evento está diseñado para adultos. Amamos a los niños<br>
+                pero queremos que este día sea para disfrutar sin preocupaciones.<br>
+                ¡Gracias por tu comprensión!
+            </p>
+            
+            <p class="thankyou-message fade-in delay-2">
+                Tu presencia hará de nuestra celebración<br>
+                un recuerdo aún más especial y completo.
+            </p>
+            
+            <div class="divider fade-in delay-2"></div>
+            
+            <div class="fade-in delay-3" style="margin-top: 4rem;">
+                <p style="color: var(--color-text-medium); margin-bottom: 1rem; font-size: 1.3rem;">Con todo nuestro cariño,</p>
+                <p class="signature">Andrea & Mauro</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <p class="footer-text">
+                Con amor, Andrea y Mauro<br>
+                <span class="footer-love">14 de Marzo de 2026</span>
+            </p>
+            <p style="font-size: 0.9rem; opacity: 0.6;">
+                Esta invitación fue creada especialmente para compartir nuestro día especial contigo.
+            </p>
+        </div>
+    </footer>
+    
+    <!-- Modal del Formulario -->
+    <div id="formModal">
+        <div class="modal-content">
+            <button id="closeModal">&times;</button>
+            <div class="modal-header">
+                <h3 class="modal-title">Confirmar Asistencia</h3>
+                <p class="modal-subtitle">Por favor completa la siguiente información</p>
+            </div>
+            <div class="modal-body">
+                <form id="confirmationForm">
+                    <div class="form-group">
+                        <label for="guestName" class="form-label">Nombre completo *</label>
+                        <input type="text" id="guestName" class="form-input" required placeholder="Tu nombre completo">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="guestEmail" class="form-label">Correo electrónico *</label>
+                        <input type="email" id="guestEmail" class="form-input" required placeholder="ejemplo@correo.com">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="guestPhone" class="form-label">Teléfono</label>
+                        <input type="tel" id="guestPhone" class="form-input" placeholder="+591 XXX XXX XXX">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="guestCount" class="form-label">Número de asistentes *</label>
+                        <select id="guestCount" class="form-select" required>
+                            <option value="">Selecciona...</option>
+                            <option value="1">1 persona (solo yo)</option>
+                            <option value="2">2 personas</option>
+                            <option value="3">3 personas</option>
+                            <option value="4">4 personas</option>
+                            <option value="5">5 o más personas</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="guestMessage" class="form-label">Mensaje especial (opcional)</label>
+                        <textarea id="guestMessage" class="form-input" rows="3" placeholder="Comparte un mensaje, petición especial, o alergias alimentarias..."></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="submit" form="confirmationForm" class="elegant-button" style="width: 100%; max-width: 300px;">
+                    <i class="fas fa-paper-plane"></i> Enviar Confirmación
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Control de Música -->
+    <div class="music-control paused" id="musicControl">
+        <i class="fas fa-music"></i>
+    </div>
+    
+    <!-- Audio de Fondo -->
+    <audio id="backgroundMusic" loop preload="metadata">
+        <source src="assets/audio/musica-romantica.mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+
+    <script>
+        // CONFIGURACIÓN PRINCIPAL
+        const WEDDING_DATE = new Date('March 14, 2026 15:00:00').getTime();
+        let isMusicPlaying = false;
+        let confirmationSent = false;
+
+        // 1. CONTADOR REGRESIVO
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const timeLeft = WEDDING_DATE - now;
+            
+            if (timeLeft > 0) {
+                const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+                
+                document.getElementById('days').textContent = days.toString().padStart(2, '0');
+                document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+                document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+                document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+                
+                // Efecto visual en el cambio de segundos
+                if (seconds === 59) {
+                    document.getElementById('seconds').style.color = 'var(--color-accent-dark)';
+                    setTimeout(() => {
+                        document.getElementById('seconds').style.color = '';
+                    }, 500);
+                }
+            } else {
+                document.querySelector('.countdown-title').textContent = "¡El gran día ha llegado!";
+                document.querySelectorAll('.countdown-number').forEach(el => {
+                    el.textContent = "00";
+                });
+                clearInterval(countdownInterval);
+            }
+        }
+        
+        // Iniciar contador
+        updateCountdown();
+        const countdownInterval = setInterval(updateCountdown, 1000);
+
+        // 2. NAVEGACIÓN RESPONSIVE
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navLinks = document.getElementById('navLinks');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            mobileMenuBtn.innerHTML = navLinks.classList.contains('active') 
+                ? '<i class="fas fa-times"></i>' 
+                : '<i class="fas fa-bars"></i>';
+        });
+        
+        // Cerrar menú al hacer clic en un enlace
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+                
+                // Actualizar enlace activo
+                document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
+                link.classList.add('active');
+            });
+        });
+        
+        // Actualizar navegación activa al hacer scroll
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('.section');
+            const scrollPos = window.scrollY + 100;
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                const sectionId = section.getAttribute('id');
+                
+                if (scrollPos >= sectionTop && scrollPos < sectionTop + sectionHeight) {
+                    document.querySelectorAll('.nav-links a').forEach(a => {
+                        a.classList.remove('active');
+                        if (a.getAttribute('href') === `#${sectionId}`) {
+                            a.classList.add('active');
+                        }
+                    });
+                }
+            });
+            
+            // Efecto en el navbar al hacer scroll
+            const nav = document.querySelector('.main-nav');
+            if (window.scrollY > 100) {
+                nav.style.boxShadow = '0 5px 25px rgba(0, 0, 0, 0.08)';
+                nav.style.padding = '0.7rem 0';
+            } else {
+                nav.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.05)';
+                nav.style.padding = '1rem 0';
+            }
+        });
+
+        // 3. MÚSICA DE FONDO
+        const backgroundMusic = document.getElementById('backgroundMusic');
+        const musicControl = document.getElementById('musicControl');
+        
+        // Configurar volumen inicial
+        backgroundMusic.volume = 0.6;
+        
+        // Control de música al hacer clic
+        musicControl.addEventListener('click', function() {
+            if (isMusicPlaying) {
+                backgroundMusic.pause();
+                musicControl.innerHTML = '<i class="fas fa-music"></i>';
+                musicControl.classList.add('paused');
+            } else {
+                backgroundMusic.play().then(() => {
+                    musicControl.innerHTML = '<i class="fas fa-volume-up"></i>';
+                    musicControl.classList.remove('paused');
+                }).catch(error => {
+                    console.log("Error al reproducir música:", error);
+                    musicControl.innerHTML = '<i class="fas fa-exclamation-triangle"></i>';
+                    setTimeout(() => {
+                        musicControl.innerHTML = '<i class="fas fa-music"></i>';
+                    }, 2000);
+                });
+            }
+            isMusicPlaying = !isMusicPlaying;
+        });
+        
+        // Mostrar instrucción para activar música en móviles
+        if (/Mobi|Android/i.test(navigator.userAgent)) {
+            setTimeout(() => {
+                if (!isMusicPlaying) {
+                    musicControl.style.backgroundColor = 'var(--color-whatsapp)';
+                    musicControl.innerHTML = '<i class="fas fa-play"></i>';
+                    setTimeout(() => {
+                        musicControl.style.backgroundColor = '';
+                        musicControl.innerHTML = '<i class="fas fa-music"></i>';
+                    }, 3000);
+                }
+            }, 2000);
+        }
+
+        // 4. CONFIRMACIÓN DE ASISTENCIA
+        const confirmButton = document.getElementById('confirmButton');
+        const formModal = document.getElementById('formModal');
+        const closeModal = document.getElementById('closeModal');
+        const confirmationForm = document.getElementById('confirmationForm');
+        
+        confirmButton.addEventListener('click', function() {
+            if (confirmationSent) {
+                alert('¡Ya has confirmado tu asistencia! Gracias.');
+                return;
+            }
+            formModal.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        });
+
+        // Cerrar modal
+        closeModal.addEventListener('click', function() {
+            formModal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        });
+
+        // Cerrar modal al hacer clic fuera
+        formModal.addEventListener('click', function(e) {
+            if (e.target === formModal) {
+                formModal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        // Manejar envío del formulario
+        confirmationForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Simular envío (en un caso real, aquí se enviaría a un servidor)
+            const formData = {
+                name: document.getElementById('guestName').value,
+                email: document.getElementById('guestEmail').value,
+                phone: document.getElementById('guestPhone').value,
+                guests: document.getElementById('guestCount').value,
+                message: document.getElementById('guestMessage').value
+            };
+            
+            // Mostrar mensaje de éxito
+            alert(`¡Gracias ${formData.name} por confirmar tu asistencia!\n\nHemos registrado ${formData.guests} persona(s) para el evento. Te contactaremos si necesitamos más información.`);
+            
+            // Actualizar interfaz
+            confirmButton.innerHTML = '<i class="fas fa-check"></i> ¡Confirmado!';
+            confirmButton.classList.add('confirmed');
+            confirmButton.disabled = true;
+            confirmationSent = true;
+            
+            // Cerrar modal
+            formModal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+            
+            // Limpiar formulario
+            confirmationForm.reset();
+            
+            // Mostrar efecto de confetti
+            showConfetti();
+        });
+
+        // 5. ANIMACIONES AL SCROLL
+        const fadeElements = document.querySelectorAll('.fade-in');
+        
+        const fadeObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        });
+        
+        fadeElements.forEach(el => fadeObserver.observe(el));
+
+        // 6. EFECTO CONFETTI
+        function showConfetti() {
+            const colors = ['#C8A878', '#E8D4C8', '#FFFEFB', '#F9F7F4'];
+            const confettiCount = 100;
+            
+            for (let i = 0; i < confettiCount; i++) {
+                const confetti = document.createElement('div');
+                confetti.style.position = 'fixed';
+                confetti.style.width = '10px';
+                confetti.style.height = '10px';
+                confetti.style.background = colors[Math.floor(Math.random() * colors.length)];
+                confetti.style.borderRadius = Math.random() > 0.5 ? '50%' : '0';
+                confetti.style.left = Math.random() * 100 + 'vw';
+                confetti.style.top = '-20px';
+                confetti.style.opacity = '0.8';
+                confetti.style.zIndex = '9999';
+                confetti.style.pointerEvents = 'none';
+                
+                document.body.appendChild(confetti);
+                
+                // Animación
+                const animation = confetti.animate([
+                    { transform: 'translateY(0) rotate(0deg)', opacity: 0.8 },
+                    { transform: `translateY(${window.innerHeight + 20}px) rotate(${Math.random() * 360}deg)`, opacity: 0 }
+                ], {
+                    duration: Math.random() * 3000 + 2000,
+                    easing: 'cubic-bezier(0.215, 0.610, 0.355, 1)'
+                });
+                
+                animation.onfinish = () => confetti.remove();
+            }
+        }
+
+        // 7. INICIALIZACIÓN
+        document.addEventListener('DOMContentLoaded', function() {
+            // Asegurar que la navegación comience correctamente
+            document.querySelector('.nav-links a[href="#portada"]').classList.add('active');
+            
+            // Precargar imágenes importantes
+            const imagesToPreload = [
+                'assets/images/foto-novios.jpg',
+                'assets/images/fondo-portada.jpg'
+            ];
+            
+            imagesToPreload.forEach(src => {
+                const img = new Image();
+                img.src = src;
+            });
+            
+            // Manejar tecla Escape para cerrar modal
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && formModal.style.display === 'flex') {
+                    formModal.style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
